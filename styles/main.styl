@@ -70,6 +70,7 @@ body
     padding: 10px
     text-decoration: none
     text-align: center
+    overflow: hidden
     &:hover, &.active
       background: #111
       color: white
@@ -147,3 +148,11 @@ a
 
 #home
   line-height: 1.8
+
+@media all and (max-width : 480px)
+  #header
+    // display: none
+    .details__title
+      font-size: 180%
+  .menu
+    font-size: 80%

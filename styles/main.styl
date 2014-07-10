@@ -34,6 +34,9 @@ body
   height: 100px
   overflow: hidden
   border-radius: 50px
+  position relative
+  top: 8px
+  left: 20px
 
 .details__title
   margin: 0 // base's fault
@@ -41,6 +44,7 @@ body
   color: #fff
   font-size: 280%
   margin-top: 10px
+  margin-left: 30px
   small
     display: block
     text-transform: uppercase
@@ -83,6 +87,8 @@ a
   h1
     margin-top: 10px
     margin-bottom: 20px
+    .fa
+      margin-right: 10px
   p
     line-height: 1.6
     margin-bottom: 10px
@@ -127,3 +133,17 @@ a
 
 .read-more
   float: right
+
+#skills
+  ul
+    margin: 20px 0 40px
+    opacity: 0.9
+  .columns
+    -webkit-columns: 2
+    p, li
+      margin-right: 25px
+    .break-before
+      -webkit-column-break-before: always
+
+#home
+  line-height: 1.8

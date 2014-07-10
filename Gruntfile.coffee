@@ -1,6 +1,6 @@
-DEBUG = process.env.NODE_ENV is 'development'
-
 module.exports = (grunt) ->
+  
+  target = grunt.option('target') or 'dev'
   
   grunt.initConfig
     pkg: grunt.file.readJSON 'package.json'
@@ -33,8 +33,6 @@ module.exports = (grunt) ->
 
     stylus:
       compile:
-        options:
-          compress: !DEBUG
         files:
           'www/css/main.css': 'styles/main.styl'
 
@@ -50,7 +48,7 @@ module.exports = (grunt) ->
       compile:
         options:
           data:
-            DEBUG: DEBUG
+            DEBUG: target is 'dev'
         files:
           'www/index.html': ['views/index.jade']
 

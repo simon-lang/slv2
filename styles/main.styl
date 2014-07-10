@@ -1,0 +1,129 @@
+@import 'abstractions'
+@import 'tooltips'
+@import 'base'
+
+$cobalt = #2D323B
+
+*
+  margin: 0
+  padding: 0
+  // transition: all 0.2s
+
+li
+  list-style-type: none
+
+body
+  font-family: 'Helvetica Neue'
+  color: #ccc
+  background: rgb(17, 17, 21)
+  margin: 0 auto
+  font-size: 1.2em
+
+.container
+  max-width: 1000px
+  margin: 0 auto
+
+.toolbar
+  background: $cobalt
+  padding: 10px
+  position: relative
+  border-bottom: 1px solid #222
+
+.avatar
+  width: 100px
+  height: 100px
+  overflow: hidden
+  border-radius: 50px
+
+.details__title
+  margin: 0 // base's fault
+  font-weight: 100
+  color: #fff
+  font-size: 280%
+  margin-top: 10px
+  small
+    display: block
+    text-transform: uppercase
+    color: #717887
+    font-size: 60%
+
+.menu-icon
+  position: absolute
+  right: 20px
+  top: 20px
+  font-size: 32px
+  top: 20px
+
+.menu
+  background: rgb(26, 28, 35)  
+
+.tabs
+  display: -webkit-flex
+  a
+    -webkit-flex: 1
+    color: rgb(80,80,80)
+    display: block
+    padding: 10px
+    text-decoration: none
+    text-align: center
+    &:hover, &.active
+      background: #111
+      color: white
+
+a
+  color: rgb(45, 125, 220) 
+
+.main
+  // text-shadow: 1px 1px 1px #444
+  section
+    display: none
+    padding: 20px
+  section.active
+    display: block
+  h1
+    margin-top: 10px
+    margin-bottom: 20px
+  p
+    line-height: 1.6
+    margin-bottom: 10px
+  li
+    margin: 10px
+    margin-left: 20px
+    list-style-type: square
+
+.spaced li
+  margin-bottom: 20px
+
+.hidden
+  display: none
+  background: rgba(0,0,0,0.8)
+  margin: 20px
+  padding: 20px
+  border: 1px solid #333
+  
+.well
+  margin: 20px
+  padding: 20px
+  background: rgba(0,0,0,0.8)
+  border: 1px solid #333
+
+.center
+  text-align: center
+
+#portfolio img
+  margin: 20px 0
+  &.half-width
+    width: 45%
+    margin-right: 2%
+
+.footer .tabs
+  display: -webkit-flex
+
+.footer .tabs li
+  -webkit-flex: 1
+  font-size: 48px
+  span
+    display: none
+
+.read-more
+  float: right

@@ -1,0 +1,25 @@
+.tooltip
+  position: relative
+
+.tooltip:before
+  display: none
+  position: absolute
+  left: 50%
+  width: 200px
+  text-align: center
+  margin-left: -100px
+  content: attr(title)
+  padding: 5px
+  background-color: rgba(0,0,0,0.3)
+  border: 1px solid #111
+  font-family: arial
+  font-size: 24px
+  border-radius: 2px
+  color: #f5f5f5
+  text-shadow: none
+  z-index: 200
+  top: calc(100% + 10px)
+  opacity: 0.9
+
+.tooltip:hover:before
+  display: block

@@ -1,0 +1,33 @@
+// Nicole Sullivan Media Block
+// -------------------------
+// http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.media
+  display: block
+
+.media-img
+  float: left
+  margin-right: 1.25em
+
+.media-img-rev
+  float: right
+  margin-left: 1.25em
+
+.media-img img
+  display: block
+
+.media-body
+  overflow: hidden
+  &:last-child
+    margin-bottom: 0

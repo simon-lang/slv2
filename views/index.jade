@@ -1,0 +1,30 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='format-detection', content='telephone=no')
+    meta(name='description', content='Brisbane NodeJS Developer')
+    meta(name="viewport", content="width=device-width", minimum-scale="1.0", maximum-scale="1.0")
+    title Simon Lang - NodeJS development, Brisbane
+    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='css/main.css')
+    if DEBUG
+      script(src='js/lib.js')
+      script(src='js/app.js')
+      script(src='http://localhost:35729/livereload.js')
+    else
+      script(src='js/app.min.js')
+  body
+    include _header
+
+    .main.container
+      include _home
+      include _employment
+      include _skills
+      include _portfolio
+      include _about
+      include _code_samples
+
+    .footer.container
+      include _footer

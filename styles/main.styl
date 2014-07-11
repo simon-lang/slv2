@@ -1,7 +1,7 @@
 @import 'abstractions'
-@import 'tooltips'
 @import 'base'
 @import 'lightbox'
+@import 'tooltips'
 
 $cobalt = #2D323B
 
@@ -66,7 +66,7 @@ body
   display: -webkit-flex
   a
     -webkit-flex: 1
-    color: rgb(80,80,80)
+    color: rgba(255, 255, 255, 0.3)
     display: block
     padding: 10px
     text-decoration: none
@@ -130,8 +130,11 @@ a
 .footer .tabs li
   -webkit-flex: 1
   font-size: 48px
+  padding-bottom: 20px
   span
     display: none
+  a
+    padding-bottom: 100px
 
 .read-more
   float: right
@@ -147,7 +150,7 @@ a
     .break-before
       -webkit-column-break-before: always
 
-#home
+#home p
   line-height: 1.8
 
 @media all and (max-width : 480px)
@@ -155,5 +158,16 @@ a
     // display: none
     .details__title
       font-size: 180%
+      margin-left: 10px
   .menu
     font-size: 80%
+
+  .avatar
+    width: 80px
+    height: 80px
+    overflow: hidden
+    border-radius: 40px
+    left: 10px
+
+  .tabs a.hide-on-mobile
+    display: none

@@ -1,6 +1,8 @@
 # simonlang.org
 
 ## TODO:
-- Looks terrible on mobile. unusable
-- Don't deploy livereload
-- Image links in lightbox
+- Improve on mobile
+
+## Deployment
+
+`rsync -Pav ./ 175.107.137.121:/var/www/simonlang.org/web`

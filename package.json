@@ -5,7 +5,8 @@
   "scripts": {
     "start": "grunt server",
     "prestart": "bower install; grunt;",
-    "postinstall": "bower install; grunt;"
+    "postinstall": "bower install; grunt;",
+    "deploy": "cd www; rsync -Pav ./ root@175.107.137.121:/var/www/simonlang.org/web"
   },
   "author": "",
   "license": "ISC",

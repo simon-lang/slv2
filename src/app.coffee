@@ -51,3 +51,18 @@ $ ->
   # $('.popup').click (e) ->
   #   e.preventDefault()
   #   alert @href
+  
+  # seriously, this is insanely lazy. just change the html
+  html = $('#employment').html()
+  companies = [
+    'Codeworx'
+    'Digicon'
+    'Open Platform'
+    'Self Employed'
+    'Kintek.com.au'
+    'University of Queensland'
+    'Daily Mercury'
+  ]
+  _.each companies, (c) -> html = html.replace c, "<strong>#{c}</strong>"
+  $('#employment').html html
+  

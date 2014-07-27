@@ -64,5 +64,5 @@ $ ->
     'Daily Mercury'
   ]
   _.each companies, (c) -> html = html.replace c, "<strong>#{c}</strong>"
-  $('#employment').html html
+  # $('#employment').html html
   

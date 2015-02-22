@@ -1,7 +1,7 @@
 module.exports = (grunt) ->
-  
+
   target = grunt.option('target') or 'dev'
-  
+
   grunt.initConfig
     pkg: grunt.file.readJSON 'package.json'
 
@@ -24,6 +24,7 @@ module.exports = (grunt) ->
           useAvailablePort: true
           hostname: '*'
           base: 'www'
+          livereload: port: 12345
           # keepalive: true
 
     'gh-pages':
@@ -68,7 +69,7 @@ module.exports = (grunt) ->
         dest: 'www/js/app.min.js'
 
     autoprefixer:
-      options: {}     
+      options: {}
       no_dest:
         src: 'www/css/main.css'
 
@@ -84,7 +85,7 @@ module.exports = (grunt) ->
         tasks: ['jade']
       livereload:
         options:
-          livereload: true
+          livereload: port: 12345
         files: [
           'www/css/main.css'
           'www/index.html'

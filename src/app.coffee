@@ -35,9 +35,9 @@ $ ->
   externalLinks $('body')
 
   $('.read-more').on 'click', (e) ->
-      e.preventDefault()
-      $(this).next('.hidden').toggle()
-      $(this).text (index, text) -> if text is 'more info...' then 'collapse' else 'more info...' 
+    e.preventDefault()
+    $(this).next('.hidden').toggle()
+    $(this).text (index, text) -> if text is 'more info...' then 'collapse' else 'more info...'
 
   hash = window.location.hash
   if hash and $('.main > section' + hash).length
@@ -47,11 +47,6 @@ $ ->
   email = ['me','@','simonlang','.org'].join ''
   $('.mailto').attr 'href', 'mailto:' + email
 
-  # todo: need an overlay lib
-  # $('.popup').click (e) ->
-  #   e.preventDefault()
-  #   alert @href
-  
   # seriously, this is insanely lazy. just change the html
   html = $('#employment').html()
   companies = [
@@ -65,4 +60,3 @@ $ ->
   ]
   _.each companies, (c) -> html = html.replace c, "<strong>#{c}</strong>"
   # $('#employment').html html
-  

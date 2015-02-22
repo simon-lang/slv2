@@ -92,8 +92,12 @@ module.exports = (grunt) ->
           'www/js/app.js'
         ]
 
+    clean:
+      www: ['www']
+
   grunt.loadNpmTasks 'grunt-autoprefixer'
   grunt.loadNpmTasks 'grunt-browserify'
+  grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-contrib-connect'
   grunt.loadNpmTasks 'grunt-contrib-copy'
@@ -103,5 +107,5 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-gh-pages'
 
-  grunt.registerTask 'default', ['browserify', 'stylus', 'jade', 'uglify', 'autoprefixer', 'copy']
+  grunt.registerTask 'default', ['clean', 'browserify', 'stylus', 'jade', 'uglify', 'autoprefixer', 'copy']
   grunt.registerTask 'server', ['connect', 'watch']

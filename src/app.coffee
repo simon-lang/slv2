@@ -21,6 +21,7 @@ $ ->
   $('a.nav, .menu a').on 'click', (e) ->
     e.preventDefault()
     window.location.hash = $(this).attr('href')  # stop bumping page around
+    $('html,body').scrollTop 0
     href = $(this).attr 'href'
     $('a').removeClass 'active'
     $(this).addClass 'active'

@@ -109,3 +109,4 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'default', ['clean', 'browserify', 'stylus', 'jade', 'uglify', 'autoprefixer', 'copy']
   grunt.registerTask 'server', ['connect', 'watch']
+  grunt.registerTask 'dev', ['connect', 'watch']

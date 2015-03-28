@@ -42,8 +42,8 @@ $ ->
 
   hash = window.location.hash
   if hash and $('.main > section' + hash).length
-      $('.main > section').hide()
-      $(hash).show()
+    $('.main > section').hide()
+    $(hash).show()
 
   email = ['me','@','simonlang','.org'].join ''
   $('.mailto').attr 'href', 'mailto:' + email

@@ -13,9 +13,10 @@ module.exports = (grunt) ->
     copy:
       build:
         cwd: 'assets'
-        src: [ 'images/*' ]
+        src: ['**/*']
         dest: 'www'
         expand: true
+        filter: 'isFile'
 
     connect:
       server:

@@ -158,6 +158,13 @@ a
 
 #header img
   cursor: pointer
+
+#header i.print
+    cursor: pointer
+    opacity: 0.2
+    margin: 1em
+    &:hover
+      opacity: 1
   
 @media all and (max-width : 480px)
   
@@ -195,3 +202,27 @@ a
     color: rgb(235, 235, 106)
   .message
     margin-left: 5px
+
+.print-only
+  display: none
+
+@media print
+  body
+    font-size: 0.9em
+    color: #333
+  .menu, .footer, .availablity-notice, i.print, .screen-only
+    display: none
+  .hidden
+    display: block
+    padding: 10px
+    border: none
+    img
+      display: none
+  .details__title
+    color: #111
+  #header.toolbar
+    border-bottom-color: #eee
+  #skills ul
+    margin-left: 1em
+  .print-only
+    display: block

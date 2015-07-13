@@ -2,6 +2,12 @@ _.templateSettings.interpolate = /{{([\s\S]+?)}}/g
 
 $ ->
 
+  $('.print').click ->
+    $('.main > section').show()
+    $('#code-samples').hide()
+    $('#portfolio').hide()
+    window.print()
+
   $.ajax(url: "https://api.github.com/users/captainclam/gists").done (gists) ->
     $('.public-gists').empty()
     for gist in gists then do (gist) ->

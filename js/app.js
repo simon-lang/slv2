@@ -3,6 +3,12 @@ _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
 
 $(function() {
   var companies, email, externalLinks, hash, html;
+  $('.print').click(function() {
+    $('.main > section').show();
+    $('#code-samples').hide();
+    $('#portfolio').hide();
+    return window.print();
+  });
   $.ajax({
     url: "https://api.github.com/users/captainclam/gists"
   }).done(function(gists) {

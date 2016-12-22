@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
+    "build": "grunt",
     "start": "grunt server",
     "prestart": "bower install; grunt;",
     "postinstall": "bower install; grunt;",

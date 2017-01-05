@@ -10,7 +10,7 @@ $(function() {
     return window.print();
   });
   $.ajax({
-    url: "https://api.github.com/users/captainclam/gists"
+    url: "https://api.github.com/users/simon-lang/gists"
   }).done(function(gists) {
     var fn, gist, i, len;
     $('.public-gists').empty();

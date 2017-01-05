@@ -8,7 +8,7 @@ $ ->
     $('#portfolio').hide()
     window.print()
 
-  $.ajax(url: "https://api.github.com/users/captainclam/gists").done (gists) ->
+  $.ajax(url: "https://api.github.com/users/simon-lang/gists").done (gists) ->
     $('.public-gists').empty()
     for gist in gists then do (gist) ->
       {id, description, html_url, created_at} = gist

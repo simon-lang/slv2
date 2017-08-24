@@ -19,7 +19,7 @@ $(function() {
       id = gist.id, description = gist.description, html_url = gist.html_url, created_at = gist.created_at;
       a = $('<a>');
       a.attr('href', html_url);
-      if (!description.length) {
+      if (!description) {
         description = 'untitled';
       }
       a.text(description);

@@ -14,7 +14,7 @@ $ ->
       {id, description, html_url, created_at} = gist
       a = $('<a>')
       a.attr 'href', html_url
-      unless description.length
+      unless description
         description = 'untitled'
       a.text description
       li = $ '<li>'

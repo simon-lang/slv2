@@ -41,10 +41,15 @@ $ ->
 
   externalLinks $('body')
 
-  $('.read-more').on 'click', (e) ->
+  $('.read-more-items > li').on 'click', (e) ->
     e.preventDefault()
-    $(this).next('.hidden').toggle()
-    $(this).text (index, text) -> if text is 'more info...' then 'collapse' else 'more info...'
+    $(this).find('.hidden').toggle()
+    $(this).find('.read-more').text (index, text) -> if text is 'more info...' then 'collapse' else 'more info...'
+
+#   $('.read-more').on 'click', (e) ->
+#     e.preventDefault()
+#     $(this).next('.hidden').toggle()
+#     $(this).text (index, text) -> if text is 'more info...' then 'collapse' else 'more info...'
 
   hash = window.location.hash
   if hash and $('.main > section' + hash).length

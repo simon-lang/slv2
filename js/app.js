@@ -53,10 +53,10 @@ $(function() {
     return target.find("a[href^='https://']").attr('target', '_blank');
   };
   externalLinks($('body'));
-  $('.read-more').on('click', function(e) {
+  $('.read-more-items > li').on('click', function(e) {
     e.preventDefault();
-    $(this).next('.hidden').toggle();
-    return $(this).text(function(index, text) {
+    $(this).find('.hidden').toggle();
+    return $(this).find('.read-more').text(function(index, text) {
       if (text === 'more info...') {
         return 'collapse';
       } else {

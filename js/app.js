@@ -64,6 +64,9 @@ $(function() {
       }
     });
   });
+  $('.read-more-items .hidden').on('click', function(e) {
+    return e.stopPropagation();
+  });
   hash = window.location.hash;
   if (hash && $('.main > section' + hash).length) {
     $('.main > section').hide();

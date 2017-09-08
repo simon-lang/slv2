@@ -46,6 +46,9 @@ $ ->
     $(this).find('.hidden').toggle()
     $(this).find('.read-more').text (index, text) -> if text is 'more info...' then 'collapse' else 'more info...'
 
+  $('.read-more-items .hidden').on 'click', (e) ->
+    e.stopPropagation()
+
 #   $('.read-more').on 'click', (e) ->
 #     e.preventDefault()
 #     $(this).next('.hidden').toggle()

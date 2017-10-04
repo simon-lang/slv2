@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/simonlang
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://simonlang.org
+  * I am simonlang (https://keybase.io/simonlang) on keybase.
+  * I have a public key ASDYTou6XNqXxLThey3kcC4CDJR3RJytbjda5HOutDNdywo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d84e8bba5cda97c4b4e17b2de4702e020c9477449cad6e375ae473aeb4335dcb0a",
+      "host": "keybase.io",
+      "kid": "0120d84e8bba5cda97c4b4e17b2de4702e020c9477449cad6e375ae473aeb4335dcb0a",
+      "uid": "d28a900425fc417d46dc8429ac5c5400",
+      "username": "simonlang"
+    },
+    "merkle_root": {
+      "ctime": 1507161070,
+      "hash": "6a9a7756f0ff68594d3a7759b82220123374a14d66d1a3ff48c99aa2c0afaa74ac695d5a80ba466591cc8708652c4e5fb8239276d8fdf5df3c50e17d8d811cb1",
+      "hash_meta": "d8cbb4e6c70eec2503fcbf665bb4a116738e2320b5c0974b9d58d9872b3e164d",
+      "seqno": 1503103
+    },
+    "service": {
+      "hostname": "simonlang.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.33"
+  },
+  "ctime": 1507161075,
+  "expire_in": 504576000,
+  "prev": "817b43d49e3b6cdfd31b0f8d21a49f331095dfa3d8591493af1131424d5898ec",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2E6Lulzal8S04Xst5HAuAgyUd0ScrW43WuRzrrQzXcsKp3BheWxvYWTFA0Z7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZDg0ZThiYmE1Y2RhOTdjNGI0ZTE3YjJkZTQ3MDJlMDIwYzk0Nzc0NDljYWQ2ZTM3NWFlNDczYWViNDMzNWRjYjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDg0ZThiYmE1Y2RhOTdjNGI0ZTE3YjJkZTQ3MDJlMDIwYzk0Nzc0NDljYWQ2ZTM3NWFlNDczYWViNDMzNWRjYjBhIiwidWlkIjoiZDI4YTkwMDQyNWZjNDE3ZDQ2ZGM4NDI5YWM1YzU0MDAiLCJ1c2VybmFtZSI6InNpbW9ubGFuZyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUwNzE2MTA3MCwiaGFzaCI6IjZhOWE3NzU2ZjBmZjY4NTk0ZDNhNzc1OWI4MjIyMDEyMzM3NGExNGQ2NmQxYTNmZjQ4Yzk5YWEyYzBhZmFhNzRhYzY5NWQ1YTgwYmE0NjY1OTFjYzg3MDg2NTJjNGU1ZmI4MjM5Mjc2ZDhmZGY1ZGYzYzUwZTE3ZDhkODExY2IxIiwiaGFzaF9tZXRhIjoiZDhjYmI0ZTZjNzBlZWMyNTAzZmNiZjY2NWJiNGExMTY3MzhlMjMyMGI1YzA5NzRiOWQ1OGQ5ODcyYjNlMTY0ZCIsInNlcW5vIjoxNTAzMTAzfSwic2VydmljZSI6eyJob3N0bmFtZSI6InNpbW9ubGFuZy5vcmciLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zMyJ9LCJjdGltZSI6MTUwNzE2MTA3NSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiI4MTdiNDNkNDllM2I2Y2RmZDMxYjBmOGQyMWE0OWYzMzEwOTVkZmEzZDg1OTE0OTNhZjExMzE0MjRkNTg5OGVjIiwic2Vxbm8iOjUsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAEJ7bfL47yeHfoaqEuXvskSkZ/9PJL7m17iMvv80o7tXpKW83OJ3SfRrHgywspZCwRgC4kEFKGZmPDnTDBFjJCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICbQelTCeDDYDE3Htq6tlbkYnaTjuPF9nUr9IBT1OgfLo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/simonlang
+
+==================================================================

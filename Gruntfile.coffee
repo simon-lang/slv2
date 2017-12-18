@@ -102,6 +102,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-gh-pages'
 
-  grunt.registerTask 'default', ['clean', 'browserify', 'stylus', 'pug', 'uglify', 'autoprefixer', 'copy']
+  grunt.registerTask 'default', ['clean', 'browserify', 'stylus', 'pug', 'autoprefixer', 'copy']
   grunt.registerTask 'server', ['connect', 'watch']
   grunt.registerTask 'dev', ['connect', 'watch']

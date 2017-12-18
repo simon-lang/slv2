@@ -46,13 +46,13 @@ module.exports = (grunt) ->
           transform: ['coffeeify']
           extensions: '.coffee'
 
-    jade:
+    pug:
       compile:
         options:
           data:
             DEBUG: target is 'dev'
         files:
-          'www/index.html': ['views/index.jade']
+          'www/index.html': ['views/index.pug']
 
     uglify:
       options:
@@ -81,9 +81,9 @@ module.exports = (grunt) ->
       browserify:
         files: ['src/**/*.coffee']
         tasks: ['browserify']
-      jade:
-        files: ['views/**/*.jade']
-        tasks: ['jade']
+      pug:
+        files: ['views/**/*.pug']
+        tasks: ['pug']
       livereload:
         options:
           livereload: port: 12345
@@ -102,12 +102,12 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-contrib-connect'
   grunt.loadNpmTasks 'grunt-contrib-copy'
-  grunt.loadNpmTasks 'grunt-contrib-jade'
+  grunt.loadNpmTasks 'grunt-contrib-pug'
   grunt.loadNpmTasks 'grunt-contrib-stylus'
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-gh-pages'
 
-  grunt.registerTask 'default', ['clean', 'browserify', 'stylus', 'jade', 'uglify', 'autoprefixer', 'copy']
+  grunt.registerTask 'default', ['clean', 'browserify', 'stylus', 'pug', 'uglify', 'autoprefixer', 'copy']
   grunt.registerTask 'server', ['connect', 'watch']
   grunt.registerTask 'dev', ['connect', 'watch']

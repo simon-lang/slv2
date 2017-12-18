@@ -13,17 +13,18 @@
   "license": "ISC",
   "dependencies": {
     "coffeeify": "*",
+    "grunt-contrib-pug": "^1.0.0",
     "jsdom": "*",
-    "lodash": "*"
+    "lodash": "*",
+    "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {
     "grunt": "*",
-    "grunt-cli": "*",
     "grunt-autoprefixer": "*",
     "grunt-browserify": "*",
+    "grunt-cli": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-connect": "*",
-    "grunt-contrib-cssmin": "*",
     "grunt-contrib-copy": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-jade": "*",

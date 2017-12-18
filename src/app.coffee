@@ -45,6 +45,10 @@ $ ->
     e.preventDefault()
     $(this).find('.hidden').toggle()
     $(this).find('.read-more').text (index, text) -> if text is 'more info...' then 'collapse' else 'more info...'
+    $(this).find('img').each (el) ->
+        src = $(this).attr('lazy-src')
+        $(this).attr('src', src)
+        console.log src
 
   $('.read-more-items .hidden').on 'click', (e) ->
     e.stopPropagation()

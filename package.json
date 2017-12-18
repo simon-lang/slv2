@@ -33,6 +33,7 @@
     "grunt-contrib-stylus": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
-    "grunt-gh-pages": "*"
+    "grunt-gh-pages": "*",
+    "uglify-es": "git://github.com/mishoo/UglifyJS2#harmony"
   }
 }

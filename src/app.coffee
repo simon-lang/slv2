@@ -1,6 +1,3 @@
-_ = require('lodash')
-$ = require('jquery')
-
 _.templateSettings.interpolate = /{{([\s\S]+?)}}/g
 
 $ ->
@@ -51,7 +48,6 @@ $ ->
     $(this).find('img').each (el) ->
         src = $(this).attr('lazy-src')
         $(this).attr('src', src)
-        console.log src
 
   $('.read-more-items .hidden').on 'click', (e) ->
     e.stopPropagation()

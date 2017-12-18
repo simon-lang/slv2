@@ -3,3 +3,5 @@ npm-debug.log
 .grunt
 www
 bower_components
+typings
+dist

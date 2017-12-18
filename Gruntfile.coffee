@@ -59,14 +59,8 @@ module.exports = (grunt) ->
         mangle: false
         nonull: true
         banner: '/*! <%= pkg.name %> <%= grunt.template.today(\'yyyy-mm-dd HH:mm:ss\') %> */\n'
-      lib:
-        files:
-          'www/js/lib.js': [
-            'bower_components/lodash/dist/lodash.js'
-            'bower_components/jquery/dist/jquery.js'
-          ]
       prod:
-        src: ['www/js/lib.js', 'www/js/app.js']
+        src: ['www/js/app.js']
         dest: 'www/js/app.min.js'
 
     autoprefixer:

@@ -13,9 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "coffeeify": "*",
+    "coffeescript": "^2.1.0",
     "grunt-contrib-pug": "^1.0.0",
+    "jquery": "^3.2.1",
     "jsdom": "*",
-    "lodash": "*",
+    "lodash": "^4.17.4",
     "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {

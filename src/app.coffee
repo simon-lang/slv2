@@ -1,3 +1,6 @@
+_ = require('lodash')
+$ = require('jquery')
+
 _.templateSettings.interpolate = /{{([\s\S]+?)}}/g
 
 $ ->

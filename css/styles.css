@@ -328,16 +328,12 @@ a {
 .text-center {
     text-align: center;
 }
-ul.spaced > li {
-    margin-bottom: 0.5em;
-}
 .subtle {
     opacity: 0.8;
 }
 .read-more-content {
     padding: 1em;
-    margin-top: 1em 2em;
-    background: rgba(0,0,0,0.1)
+    margin: 0;
 }
 h1 .fa {
     float: right;
@@ -356,4 +352,19 @@ ul.unstyled>li>a>span {
 }
 ul.unstyled > li > a {
     text-decoration: none;
+}
+section {
+    max-width: 1000px;
+}
+
+.read-more-items > li {
+  cursor: pointer;
+  padding: 0.4em;
+  margin: 0;
+}
+.read-more-items > li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.read-more-items .read-more-content {
+  cursor: default;
 }
